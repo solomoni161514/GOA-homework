@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --color1: green;
+    --color2: red;
+    --background-color1: chocolate;
+    --background-color2: blue;
+    --font-size1: 30px;
+    --font-size2: 50px;
+    --font-family1: cursive;
+    --font-family2: roboto;
+    --box-shadow1:10px,green;
+    --box-shadow2:10px,blue;
+    --border1:3px solid black;
+    --border2:3px solid rgb(255, 0, 0);
+    --border-radius1:10px;
+    --border-radius2:20px;
+    --margin1:130px;
+    --margin2:230px;
+    --padding1:30px;
+    --padding2:50px;
+    --position1:relative;
+    --position2:absolute;
+}
+
+
+.div1{
+    color: var(--color1);
+    background-color: var(--background-color1);
+    font-size: var(--font-size1);
+    font-family:var(--font-family1);
+    box-shadow:var(--box-shadow1);
+    border:var(--border1);
+    border-radius:var(--border-radius1);
+    margin:var(--margin1);
+    padding: var(--padding1);
+    position:var(--position1);
+}
+.div2{
+    color: var(--color2);
+    background-color: var(--background-color2);
+    font-size: var(--font-size2);
+    font-family:var(--font-family2);
+    box-shadow:var(--box-shadow2);
+    border:var(--border2);
+    border-radius:var(--border-radius2);
+    margin:var(--margin2);
+    padding: var(--padding2);
+    position:var(--position2);
+}

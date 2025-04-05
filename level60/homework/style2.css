@@ -1,0 +1,31 @@
+* {
+    margin: 150px;
+    padding: 0;
+}
+
+.div {
+    width: 65px;
+    height: 65px;
+    background-color: red;
+    position: relative;
+    transition: transform 4s;
+}
+
+.div:hover {
+    animation: GOA 4s forwards;
+}
+
+@keyframes GOA {
+    25% {
+        transform: translate(500px, 0);
+    }
+    50% {
+        transform: translate(500px, 500px);
+    }
+    75% {
+        transform: translate(0, 500px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

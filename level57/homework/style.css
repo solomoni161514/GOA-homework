@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.div1{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border: 5px solid black;
+    margin: 200px;
+    position: relative;
+    transition: 1s;
+}
+.div1:hover{
+    transform: rotate(180deg);
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+}
+.div2{
+    position: relative;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    left: 260px;
+    bottom: 350px;
+}
+.div3{
+    position: relative;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    left: 330px;
+    bottom: 370px;
+    
+}
+.div4{
+    position: relative;
+    width: 100px;
+    height: 5px;
+    background-color: green;
+    left: 260px;
+    bottom: 300px;
+}

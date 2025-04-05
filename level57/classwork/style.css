@@ -1,0 +1,19 @@
+div {
+    width: 350px;
+    height: 350px;
+    background-color: cadetblue; 
+    text-align: center;
+    font-family: monospace;
+    font-size: 2em;
+    color: white;
+    letter-spacing: 5px;
+    transition: pointer;
+    margin: 100px;
+    border: 5px solid black;
+    }
+div:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+    background-color: salmon;
+    border-radius: 50%;
+}
