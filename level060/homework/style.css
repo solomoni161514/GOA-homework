@@ -1,0 +1,28 @@
+*{
+    margin: 20px;
+}
+
+.div{
+    width: 70px;
+    height: 47px;
+    padding: 10px;
+    font-size: 35px;
+    background-color: #92b901;
+    border-radius: 5px;
+    font-family: Verdana, sans-serif;
+    color: white;
+    animation-name: css;
+    animation-duration: 5s;
+
+}
+
+@keyframes css{
+    25%{
+    transform: rotate(25deg);
+    }
+    50%{
+    transform: translateX(300px) rotate(360deg);
+    background-color: aqua;
+    }
+
+}

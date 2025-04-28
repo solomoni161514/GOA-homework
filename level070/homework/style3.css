@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+        "div1 div1 div1"
+        "div2 div3 div3"
+        "div2 div4 div5";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+}
+
+.div1 {
+    background-color: lightsalmon;
+    grid-area: div1;
+}
+
+.div2 {
+    background-color: lightgreen;
+    grid-area: div2;
+}
+
+.div3 {
+    background-color: lightgreen;
+    grid-area: div3;
+}
+
+.div4 {
+    background-color: red;
+    grid-area: div4;
+}
+
+.div5 {
+    background-color: lightsalmon;
+    grid-area: div5;
+}

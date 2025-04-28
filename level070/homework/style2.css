@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+        "div1 div1 div2 div3"
+        "div4 div5 div6 s"
+        "div7 div7 div8 div10"
+        "div7 div7 div9 d"
+        "div11 div11 div11 div12";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+}
+
+.div1 {
+    background-color: red;
+    grid-area: div1;
+}
+
+.div2 {
+    background-color: lightgreen;
+    grid-area: div2;
+}
+
+.div3 {
+    background-color: lightsalmon;
+    grid-area: div3;
+}
+
+.div4 {
+    background-color: lightsalmon;
+    grid-area: div4;
+}
+
+.div5 {
+    background-color: lightgreen;
+    grid-area: div5;
+}
+
+.div6 {
+    background-color: lightgreen;
+    grid-area: div6;
+}
+
+.div7 {
+    background-color: lightsalmon;
+    grid-area: div7;
+}
+
+.div8 {
+    background-color: lightgreen;
+    grid-area: div8;
+}
+
+.div9 {
+    background-color: lightgreen;
+    grid-area: div9;
+}
+
+.div10 {
+    background-color: red;
+    grid-area: div10;
+}
+
+.div11 {
+    background-color: lightgreen;
+    grid-area: div11;
+}
+
+.div12 {
+    background-color: lightsalmon;
+    grid-area: div12;
+}

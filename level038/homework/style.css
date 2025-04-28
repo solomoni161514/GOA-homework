@@ -1,0 +1,54 @@
+h1{
+    font-family: "Sofadi One";
+    color: darkturquoise;
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+h2{
+    font-family: "Sofadi One";
+    color: rgb(0, 209, 70);
+    box-shadow: 0px 0px 0px 0px rgba(0, 209, 70, 0.42);
+    text-align: left;
+    text-shadow: -3px -3px 10px rgb(0, 0, 0);
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+h3{
+    font-family: "Sofadi One";
+    color: rgb(209, 0, 209);
+    box-shadow: 0px 0px 5px;
+    text-align: right;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    text-decoration: line-through;
+    text-transform: lowercase;
+}
+h4{
+    font-family: "Sofadi One";
+    color: rgb(209, 0, 38);
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+h5{
+    font-family: "Sofadi One";
+    color: rgb(24, 0, 209);
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+h6{
+    font-family: "Sofadi One";
+    color: rgb(0, 209, 125);
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
+    text-decoration: underline;
+    text-transform: capitalize;
+}

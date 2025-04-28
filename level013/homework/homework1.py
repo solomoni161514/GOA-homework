@@ -1,0 +1,5 @@
+x = int(input("enter x: "))
+y = int(input("enter y: "))
+a = int(input("enter a: "))
+b = int(input("enter b: "))
+print(x + y - a * b / x)

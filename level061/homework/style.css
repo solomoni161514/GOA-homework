@@ -1,0 +1,51 @@
+
+.Text h1 {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.Text h1:hover {
+    opacity: 1;
+}
+
+.Button button {
+    transition: transform 0.5s ease-in-out;
+}
+
+.Button button:hover {
+    transform: rotate(145deg);
+}
+
+.img0 img {
+    opacity: 0.5;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: scale(1);
+}
+
+.img0 img:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.div1, .div2, .div3, .div4 {
+    position: relative;
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.div1 {
+    transform: translateY(-100%);
+}
+
+.div2 {
+    transform: translateY(100%);
+}
+
+.div3 {
+    transform: translateX(-100%);
+}
+
+.div4 {
+    transform: translateX(100%);
+}
+

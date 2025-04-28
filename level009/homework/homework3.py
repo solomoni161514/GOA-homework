@@ -1,0 +1,6 @@
+hello = input("hello ")
+p1 = input("wath is your name ")
+p2 = input("ok my name is nika ")
+p3 = input("me too")
+p4 = input("do you like hamburger")
+p5 = input("lets go to the macdonalds")

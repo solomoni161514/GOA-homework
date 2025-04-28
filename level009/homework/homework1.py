@@ -1,0 +1,8 @@
+name = input("wath is your name: ")
+last_name = input("what is your last name ")
+age = input("how old are you: ")
+country = input("where you from: ")
+favorite_car = input("wath is your favorite car: ")
+favorite_color = input("wath is your favorite color: ")
+favorite_number = input("wath is your favorite number: ")
+print('my name is', name, last_name, 'I live in', country, 'my favorite car is', favorite_car, 'my favorite color is', favorite_color, 'and', 'my favorite numbar is', favorite_number)
