@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize Div</title>
+    <style>
+        #div {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            transition: all 0.3s ease;
+        }
+        .big {
+            width: 200px;
+            height: 200px;
+        }
+        .small {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <button id="inc">Increase</button>
+    <button id="dec">Decrease</button>
+    <div id="div"></div>
+
+    <script>
+        let div = document.getElementById("div");
+
+        function increaseSize() {
+            div.classList.remove("small");
+            div.classList.add("big");
+        }
+
+        function decreaseSize() {
+            div.classList.remove("big");
+            div.classList.add("small");
+        }
+
+        document.getElementById("inc").onclick = increaseSize;
+        document.getElementById("dec").onclick = decreaseSize;
+    </script>
+</body>
+</html>

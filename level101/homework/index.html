@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv"></div>
+<script>
+  let myDiv = document.getElementById("myDiv");
+  myDiv.classList.add("highlight");
+  myDiv.classList.remove("highlight");
+</script>
+<button id="toggleButton">Toggle</button>
+<div id="targetDiv"></div>
+<script>
+  let toggleButton = document.getElementById("toggleButton");
+  let targetDiv = document.getElementById("targetDiv");
+
+  toggleButton.addEventListener("click", () => {
+    targetDiv.classList.toggle("active");
+  });
+</script>
+<p id="checkParagraph" class="important"></p>
+<script>
+  let checkParagraph = document.getElementById("checkParagraph");
+  console.log(checkParagraph.classList.contains("important"));
+</script>
+<div id="replaceDiv" class="red"></div>
+<script>
+  let replaceDiv = document.getElementById("replaceDiv");
+  replaceDiv.classList.replace("red", "blue");
+</script>
+<div id="itemDiv" class="class1 class2 class3"></div>
+<script>
+  let itemDiv = document.getElementById("itemDiv");
+  console.log(itemDiv.classList.item(1));
+</script>
+<ul id="myList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <script>
+    let myList = document.getElementById("myList");
+  
+    let newLi = document.createElement("li");
+    newLi.textContent = "New Item";
+    myList.appendChild(newLi);
+  
+    myList.removeChild(myList.firstElementChild);
+  
+    myList.children[1].textContent = "Updated Item";
+  </script>
+  <div id="styledDiv"></div>
+  <script>
+    let styledDiv = document.getElementById("styledDiv");
+    styledDiv.style.backgroundColor = "lightblue";
+    styledDiv.style.color = "darkblue";
+  </script>
+  <ul id="myList"></ul>
+  <script>
+    let myList = document.getElementById("myList");
+    let newLi = document.createElement("li");
+    newLi.textContent = "New list item";
+    myList.appendChild(newLi);
+  </script>
+  <ul id="removableList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <script>
+    let removableList = document.getElementById("removableList");
+    removableList.removeChild(removableList.children[1]);
+  </script>
+</body>
+</html>
