@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            gap: 20px;
+        }
+        div {
+            text-align: center;
+            background-color: rgb(195, 195, 195);
+            border-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            width: 500px;
+            height: 300px;
+            position: absolute;
+            bottom: 60%;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+        <div><img src="img1.png" alt=""></div>
+        <button class="programmer">Programmer</button>
+        <button class="graphic-designer">Graphic Designer</button>
+        <button class="mechanic">Mechanic</button>
+    <script>
+        let button1 = document.querySelector(".programmer");
+        let button2 = document.querySelector(".graphic-designer");
+        let button3 = document.querySelector(".mechanic");
+        let div = document.querySelector("div");
+        let img = div.querySelector("img");
+
+        button1.addEventListener("click", function() {
+            img.src = "img1.png";
+        });
+        button2.addEventListener("click", function() {
+            img.src = "img2.png";
+        });
+        button3.addEventListener("click", function() {
+            img.src = "img3.png";
+        });
+    </script>
+    
+    
+</body>
+</html>

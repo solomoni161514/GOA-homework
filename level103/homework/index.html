@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="butt">Change Color</button>
+    <div id="div" style="width: 100px; height: 100px; background-color: lightgray;"></div>
+    <script>
+        let butt = document.getElementById("butt");
+        let div = document.getElementById("div");
+
+        butt.addEventListener("click", function() {
+            let rc = "#" + Math.floor(Math.random()*16777215).toString(16);
+            div.style.backgroundColor = rc;
+        });
+    </script>
+
+
+    <br>
+    <br>
+    <br>
+    <button id="imgbut">Change img</button>
+    <img id="img" src="img1.png" alt="" style="width: 200px; height: auto;">
+
+    <script>
+        let imgbut = document.getElementById('imgbut');
+        let img = document.getElementById('img');
+
+        imgbut.addEventListener('click', () => {
+            img.src = img.src.includes('img1.png') ? 'img2.png' : 'img1.png';
+        });
+    </script>
+
+
+    <br>
+    <br>
+    <br>
+
+    <button id="togbut">Toggle Text</button>
+    <p id="text">This is some text!</p>
+
+    <script>
+        let togbut = document.getElementById('togbut');
+        let text = document.getElementById('text');
+
+        togbut.addEventListener('click', () => {
+            text.style.display = text.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+
+    <br>
+    <br>
+    <br>
+
+    <button id="CB">Increase Counter</button>
+    <span id="counter">0</span>
+
+    <script>
+        let CB = document.getElementById('CB');
+        let counter = document.getElementById('counter');
+        let count = 0;
+
+        CB.addEventListener('click', () => {
+            count++;
+            counter.textContent = count;
+        });
+    </script>
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <p>What is the capital of France?</p>
+    <label><input type="radio" name="quiz" value="Paris"> Paris</label><br>
+    <label><input type="radio" name="quiz" value="London"> London</label><br>
+    <label><input type="radio" name="quiz" value="Berlin"> Berlin</label><br>
+    <button id="checkButton">Check Answer</button>
+    <p id="result"></p>
+
+    <script>
+        const checkButton = document.getElementById('checkButton');
+        const result = document.getElementById('result');
+
+        checkButton.addEventListener('click', () => {
+            const selected = document.querySelector('input[name="quiz"]:checked');
+            if (selected) {
+                result.textContent = selected.value === 'Paris' ? 'Correct!' : 'Wrong!';
+            } else {
+                result.textContent = 'Please select an answer.';
+            }
+        });
+    </script>
+</body>
+</html>
